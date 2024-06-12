@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Age Calculator</h2>
+        <form method="POST" action="/">
+            <label for="birth_date">Enter Your Birth Date:</label>
+            <input type="date" id="birth_date" name="birth_date" required>
+            <button type="submit">Calculate Age</button>
+        </form>
+    </div>
+</body>
+</html>
